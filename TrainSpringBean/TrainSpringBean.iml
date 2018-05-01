@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration process_explicitly_annotated="false">
+        <fileset id="fileset" name="Datasource Config" removed="false" profiles="prod">
+          <file>file://$MODULE_DIR$/src/com/train/bean/profile/datasource-config.xml</file>
+          <file>file://$MODULE_DIR$/src/com/train/bean/config/mix/AConfig.java</file>
+          <file>file://$MODULE_DIR$/src/com/train/aop/code/AudienceConfig.java</file>
+          <file>file://$MODULE_DIR$/src/com/train/bean/config/auto/AutoConfig.java</file>
+          <file>file://$MODULE_DIR$/src/com/train/bean/config/mix/BConfig.java</file>
+          <file>file://$MODULE_DIR$/src/com/train/bean/config/code/CodeConfig.java</file>
+          <file>file://$MODULE_DIR$/src/com/train/bean/profile/DataSourceConfig.java</file>
+          <file>file://$MODULE_DIR$/src/com/train/bean/config/mix/MixConfig.java</file>
+          <file>file://$MODULE_DIR$/src/com/train/aop/xml/aop-config.xml</file>
+          <file>file://$MODULE_DIR$/src/com/train/bean/config/xml/code-config.xml</file>
+          <file>file://$MODULE_DIR$/src/com/train/bean/config/mix/c-config.xml</file>
+          <file>file://$MODULE_DIR$/src/com/train/spring-config.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="Spring-4.3.14.RELEASE" level="project" />
+    <orderEntry type="library" name="aspectjrt" level="project" />
+    <orderEntry type="library" name="aspectjtools" level="project" />
+    <orderEntry type="library" name="org.aspectj.matcher" level="project" />
+    <orderEntry type="library" name="aspectjweaver" level="project" />
+    <orderEntry type="library" name="junit:junit:4.12" level="project" />
+  </component>
+</module>

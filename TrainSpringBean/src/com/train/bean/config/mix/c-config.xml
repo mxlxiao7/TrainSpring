@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="com.train.bean.config.mix.BConfig"/>
+
+    <bean id="c" class="com.train.bean.config.mix.C">
+        <!--第一个b是构造函数中参数name，第二个b是BConfig @Bean修饰-->
+        <constructor-arg name="b" ref="b" ></constructor-arg>
+    </bean>
+
+</beans>

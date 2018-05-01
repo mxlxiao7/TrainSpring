@@ -1,0 +1,44 @@
+group 'com.train.spring'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+
+    providedCompile 'javax.servlet:servlet-api:2.5' // 编译期
+    providedRuntime 'javax.servlet:jstl:1.2'    // 运行时
+    compile 'aopalliance:1.0'
+    compile 'commons-logging:1.2'
+    compile 'org.springframework:spring-aop:4.3.14.RELEASE'
+    compile 'org.springframework:spring-aspects:4.3.14.RELEASE'
+    compile 'org.springframework:spring-beans:4.3.14.RELEASE'
+    compile 'org.springframework:spring-context:4.3.14.RELEASE'
+    compile 'org.springframework:spring-context-support:4.3.14.RELEASE'
+    compile 'org.springframework:spring-core:4.3.14.RELEASE'
+    compile 'org.springframework:spring-expression:4.3.14.RELEASE'
+    compile 'org.springframework:spring-instrument:4.3.14.RELEASE'
+    compile 'org.springframework:spring-instrument-tomcat:4.3.14.RELEASE'
+    compile 'org.springframework:spring-jdbc:4.3.14.RELEASE'
+    compile 'org.springframework:spring-jms:4.3.14.RELEASE'
+    compile 'org.springframework:spring-messaging:4.3.14.RELEASE'
+    compile 'org.springframework:spring-orm:4.3.14.RELEASE'
+    compile 'org.springframework:spring-oxm:4.3.14.RELEASE'
+    compile 'org.springframework:spring-test:4.3.14.RELEASE'
+    compile 'org.springframework:spring-tx:4.3.14.RELEASE'
+    compile 'org.springframework:spring-web:4.3.14.RELEASE'
+    compile 'org.springframework:spring-webmvc:4.3.14.RELEASE'
+    compile 'org.springframework:spring-webmvc-portlet:4.3.14.RELEASE'
+    compile 'org.springframework:spring-websocket:4.3.14.RELEASE'
+
+    compile 'com.google.guava:guava:+'
+}

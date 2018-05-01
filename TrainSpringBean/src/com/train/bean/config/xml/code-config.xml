@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="gun" class="com.train.bean.config.xml.Gun">
+        <property name="name" value="M16"/>
+    </bean>
+
+    <bean id="gun1" class="com.train.bean.config.xml.Gun"
+          p:name="AK47"/>
+
+    <bean id="gun2" class="com.train.bean.config.xml.Gun"
+          p:name="AWP"/>
+
+
+
+    <bean id="weapon" class="com.train.bean.config.xml.WeaponImp">
+        <constructor-arg ref="gun"/>
+    </bean>
+
+    <!--c:命名空间 gun：参数名称 -ref:注入bean的引用-->
+    <bean id="weapon1"
+          class="com.train.bean.config.xml.WeaponImp"
+          c:gun-ref="gun1"/>
+
+    <!--c:命名空间 _0：参数顺序索引 -ref:注入bean的引用-->
+    <bean id="weapon2"
+          class="com.train.bean.config.xml.WeaponImp"
+          c:_0-ref="gun2"/>
+</beans>
