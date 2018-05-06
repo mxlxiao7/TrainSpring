@@ -1,9 +1,9 @@
-package com.train.rest;
+package com.train.springboot.bean;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-public class Spittle {
+public class Person {
 
     private Long id;
 
@@ -17,10 +17,13 @@ public class Spittle {
     @JsonIgnore
     private String hobby;
 
-    public Spittle() {
+
+    public Person() {
+
     }
 
-    public Spittle(Long id, String name, Integer age, String message, String hobby) {
+    public Person(Long id, String name, Integer age, String message, String hobby) {
+
         this.id = id;
         this.name = name;
         this.age = age;
@@ -66,5 +69,17 @@ public class Spittle {
 
     public void setHobby(String hobby) {
         this.hobby = hobby;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", message='" + message + '\'' +
+                ", hobby='" + hobby + '\'' +
+                '}';
     }
 }

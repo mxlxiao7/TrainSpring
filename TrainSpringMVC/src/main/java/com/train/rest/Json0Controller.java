@@ -14,12 +14,12 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Controller
-@RequestMapping("json")
-public class RestController {
+@RequestMapping("json0")
+public class Json0Controller {
 
 
     private static final String MAX_LONG_AS_SPRING = "-1";
-    private static final Logger logger = LoggerFactory.getLogger(RestController.class);
+    private static final Logger logger = LoggerFactory.getLogger(Json0Controller.class);
 
     @Resource(name = "spittleDao")
     private SpittleDao dao;
